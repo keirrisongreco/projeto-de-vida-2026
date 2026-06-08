@@ -48,12 +48,12 @@ function calculaTempo(tempoObjetivo1) {
 }
 
 function atualizaCronometro() {
-  document.getElementById("dias0").textContent = calculaTempo(tempos[1])[0];
-  document.getElementById("horas0").textContent = calculaTempo(tempos[1])[1];
-  document.getElementById("min0").textContent = calculaTempo(tempos[1])[2];
-  document.getElementById("seg0").textContent = calculaTempo(tempos[1])[3];
-  for (let i = 0; i < contadores.length; i++) {
-    //contadores[i].textContent = calculaTempo(tempos[i]);
+    for (let i = 0; i < contadores.length; i++) {
+      document.getElementById("dias"+i).textContent = calculaTempo(tempos[1])[0];
+      document.getElementById("horas"+i).textContent = calculaTempo(tempos[1])[1];
+      document.getElementById("min"+i).textContent = calculaTempo(tempos[1])[2];
+      document.getElementById("seg"+i).textContent = calculaTempo(tempos[1])[3];
+    
   }
 }
 
